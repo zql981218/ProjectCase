@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>JS Charts</title>
+<script type="text/javascript" src="js/jscharts.js"></script>
+</head>
+<body>
+<div id="chart_container">Loading chart...</div>
+<script type="text/javascript">
+	var myChart = new JSChart('chart_container', 'pie', '');
+	myChart.setDataArray([['Sector 1', 3],['Sector 2', 6],['Sector 3', 9],['Sector 4', 13]]);
+	myChart.colorize(['#82C00B','#F2E900','#0075F8','#D40000']);
+	myChart.setSize(600, 350);
+	myChart.setPieRadius(105);
+	myChart.setTitleColor('#3F667E');
+	myChart.setPieUnitsColor('#1F465E');
+	myChart.setPieUnitsFontSize(9);
+	myChart.setPieValuesFontSize(9);
+	myChart.setTooltip(['Sector 3','Tooltip']);
+	myChart.setTooltip(['Sector 4','Tooltip']);
+	myChart.setFlagShape('diamond');
+	myChart.setFlagRadius(8);
+	myChart.setFlagColor('#FFFFFF');
+	myChart.setFlagWidth(3);
+	myChart.draw();
+</script>
+</body>
+</html>
